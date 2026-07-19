@@ -1,11 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Profile } from "../profile/Profile";
-
+import Profile from "../profile/Profile";
 
 const meta = {
-  title: 'Example/ProfilePage',
+  title: 'Test/MyProfile',
   component: Profile,
-  tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
   },
@@ -16,10 +14,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const ProfileStart: Story = {
+export const AppStart: Story = {
   args: {
-    user: {
-      name: 'Jane Doe',
-    },
   },
 };
